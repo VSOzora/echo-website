@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0c0b16" />
+  <meta name="description" content="ECHO is a personal Windows music player for your local music library, featuring a real equalizer, album artwork, favorites, and a beautiful dark interface." />
+  <title>ECHO — Your music, your space.</title>
+  <link rel="icon" type="image/png" href="assets/echo-icon.png" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="#home" aria-label="ECHO home">
+        <img src="assets/echo-icon.png" alt="" width="34" height="34" />
+        <span>ECHO<span class="brand-dot">.</span></span>
+      </a>
+      <nav class="site-nav" id="primary-nav" aria-label="Main navigation">
+        <a href="#features">Features</a>
+        <a href="#preview">Preview</a>
+        <a href="#story">About</a>
+        <a class="nav-download" href="#download">Get ECHO <span aria-hidden="true">↗</span></a>
+      </nav>
+      <button class="menu-toggle" type="button" aria-controls="primary-nav" aria-expanded="false" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero shell">
+      <div class="hero-halo" aria-hidden="true"></div>
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="status-dot"></span> YOUR PERSONAL MUSIC PLAYER</div>
+        <h1>Your music.<br /><em>Your space.</em></h1>
+        <p>A home for the songs you love. Your own local library, gorgeous album art, and powerful sound controls — without the noise.</p>
+        <div class="hero-actions">
+          <a href="#preview" class="button button-primary">Explore ECHO <span aria-hidden="true">↗</span></a>
+          <a href="#download" class="button button-quiet">Windows download <span aria-hidden="true">↓</span></a>
+        </div>
+        <p class="hero-footnote">Made with Python. Built with care. Free to explore.</p>
+      </div>
+      <div class="hero-art reveal">
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div class="album-visual">
+          <img src="assets/echo-icon.png" alt="ECHO app logo" />
+          <div class="album-shine"></div>
+        </div>
+        <div class="hero-player">
+          <div class="tiny-album"><img src="assets/echo-icon.png" alt="" /></div>
+          <div class="tiny-track"><strong>Your soundtrack</strong><span>Sounds better in ECHO</span></div>
+          <div class="equalizer" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+        </div>
+        <span class="orbit orbit-a" aria-hidden="true"></span>
+        <span class="orbit orbit-b" aria-hidden="true"></span>
+      </div>
+    </section>
+
+    <section class="marquee" aria-label="Key features">
+      <div class="marquee-content" aria-hidden="true">LOCAL MUSIC <b>✦</b> STUDIO EQ <b>✦</b> ALBUM ART <b>✦</b> YOUR LIBRARY <b>✦</b> NO SUBSCRIPTION <b>✦</b></div>
+    </section>
+
+    <section id="features" class="section shell">
+      <div class="section-heading reveal">
+        <div class="kicker">THE GOOD STUFF</div>
+        <h2>Everything you need.<br /><span>Nothing you don't.</span></h2>
+        <p>ECHO gives your local music the kind of home it deserves.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature feature-large reveal">
+          <div class="feature-icon">♪</div>
+          <h3>Your own library</h3>
+          <p>Keep your favorite MP3s and other supported local audio files together. No account required.</p>
+          <div class="library-art" aria-hidden="true"><span>♫</span><span>♪</span><span>♬</span><span>♫</span></div>
+        </article>
+        <article class="feature reveal">
+          <div class="feature-icon">≋</div>
+          <h3>Hear every detail</h3>
+          <p>Dial in your sound with real bass boost and a 10-band equalizer powered by VLC.</p>
+          <div class="eq-visual" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        </article>
+        <article class="feature reveal">
+          <div class="feature-icon">♡</div>
+          <h3>Made for your favorites</h3>
+          <p>Album covers, favorite songs, recently played tracks, and quick access to your collection.</p>
+          <div class="favorite-visual" aria-hidden="true">♥ <span>ON REPEAT</span></div>
+        </article>
+        <article class="feature reveal">
+          <div class="feature-icon">▣</div>
+          <h3>Right at home on Windows</h3>
+          <p>A real desktop app, complete with song-change notifications and its own music-player window.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="preview" class="section preview-section">
+      <div class="shell">
+        <div class="section-heading centered reveal">
+          <div class="kicker">A CLOSER LOOK</div>
+          <h2>Meet your new <span>listening space.</span></h2>
+          <p>Real screenshots from ECHO's development, built and tested on Windows.</p>
+        </div>
+        <div class="screenshot-frame reveal">
+          <div class="window-bar"><div class="window-dots"><i></i><i></i><i></i></div><span>ECHO · Music</span><span class="window-actions">— □ ×</span></div>
+          <img src="assets/echo-app.png" alt="Screenshot of the ECHO music player with its dark interface, sidebar, playlist, and purple playback controls" loading="lazy" />
+        </div>
+        <p class="preview-note">Screenshot from an earlier ECHO build. The app is still evolving.</p>
+      </div>
+    </section>
+
+    <section id="story" class="section shell about-section">
+      <div class="about-symbol reveal"><img src="assets/echo-icon.png" alt="" /></div>
+      <div class="about-content reveal">
+        <div class="kicker">A PERSONAL PROJECT</div>
+        <h2>Made for the <span>love of music.</span></h2>
+        <p>ECHO started as a beginner Python project and grew into a fully fledged personal music player. It's an experiment in coding, design, and making software that feels like your own.</p>
+        <p>No giant platform. No complicated setup. Just your music and a place to enjoy it.</p>
+      </div>
+    </section>
+
+    <section id="download" class="download-section shell">
+      <div class="download-panel reveal">
+        <span class="download-orb" aria-hidden="true"></span>
+        <div class="kicker">READY WHEN IT'S READY</div>
+        <h2>Make some <em>noise.</em></h2>
+        <p>A downloadable Windows version is planned. For now, ECHO runs as a Python desktop app.</p>
+        <button class="button button-disabled" type="button" disabled aria-disabled="true">Windows download — coming soon</button>
+        <small>When you package ECHO as an .exe, this button can link straight to it.</small>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer shell">
+    <a class="brand" href="#home"><img src="assets/echo-icon.png" alt="" width="28" height="28" /><span>ECHO<span class="brand-dot">.</span></span></a>
+    <span>Made for your soundtrack. © <span id="year">2026</span> ECHO.</span>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+</body>
+</html>
